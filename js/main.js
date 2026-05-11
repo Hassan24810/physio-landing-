@@ -124,6 +124,34 @@
         return false;
     });
 
+    // Contact form submit with toast notifications
+    $('#contactForm').submit(function (e) {
+        e.preventDefault();
+
+        var form = $(this)[0];
+        var formData = new FormData(form);
+
+        var submitToastEl = document.getElementById('submitToast');
+        var errorToastEl = document.getElementById('submitErrorToast');
+        var submitToast = new bootstrap.Toast(submitToastEl);
+        var errorToast = new bootstrap.Toast(errorToastEl);
+
+        fetch('https://formsubmit.co/ajax/hasi08012007@gmail.com', {
+            method: 'POST',
+            body: formData,
+        })
+        .then(function (response) {
+            if (response.ok) {
+                form.reset();
+                submitToast.show();
+            } else {
+                throw new Error('Form submission failed');
+            }
+        })
+        .catch(function () {
+            errorToast.show();
+        });
+    });
 
 })(jQuery);
 
