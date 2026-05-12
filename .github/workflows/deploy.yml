@@ -19,3 +19,4 @@ jobs:
           script: |
             cd /var/www/physio-landing-new
             git pull origin main
+
