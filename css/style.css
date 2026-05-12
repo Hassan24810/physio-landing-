@@ -818,7 +818,7 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    border: 5px solid var(--bs-white);
+    /* border: 5px solid var(--bs-white); */
 }
 
 .testimonial .testimonial-carousel.owl-carousel {
