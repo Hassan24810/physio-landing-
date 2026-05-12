@@ -533,7 +533,7 @@
 /*** About Start ***/
 .about .about-img {
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
     height: 100%;
     border-radius: 10px;
 }
