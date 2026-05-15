@@ -140,7 +140,7 @@
             method: 'POST',  
         
             body: formData,
-        })
+        }) 
         .then(function (response) {
             if (response.ok) {
                 form.reset();
