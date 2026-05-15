@@ -136,7 +136,7 @@
         var submitToast = new bootstrap.Toast(submitToastEl);
         var errorToast = new bootstrap.Toast(errorToastEl);
 
-        fetch('https://formsubmit.co/ajax/hasi08012007@gmail.com', {
+        fetch('https://formsubmit.co/ajax/knockphysio@gmail.com', {
             method: 'POST',
             body: formData,
         })
