@@ -137,7 +137,8 @@
         var errorToast = new bootstrap.Toast(errorToastEl);
 
         fetch('https://formsubmit.co/ajax/knockphysio@gmail.com', {
-            method: 'POST',
+            method: 'POST',  
+        
             body: formData,
         })
         .then(function (response) {
